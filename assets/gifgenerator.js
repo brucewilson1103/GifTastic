@@ -1,7 +1,7 @@
 // Adding click event listen listener to all buttons    The instructions say to make a variable called topics this is my tvshow variable.
 
 
-var topics = ["star trek", "trailer park boys", "salute your shorts"];
+var topics = ["star trek", "trailer park boys", "are you afraid of the dark"];
 
 
  // Generic function for capturing the Show name from the data-attribute
