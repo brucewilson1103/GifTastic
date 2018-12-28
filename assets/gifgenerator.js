@@ -8,7 +8,7 @@ var topics = ["star trek", "trailer park boys", "salute your shorts"];
  function alerttopics() {
    var topics = $(this).attr("data-name");
 
-   alert(topics);
+  //  alert(topics);
  }
 
  // Function for displaying show data
