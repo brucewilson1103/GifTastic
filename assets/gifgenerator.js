@@ -1,14 +1,12 @@
-// Adding click event listen listener to all buttons    The instructions say to make a variable called topics this is my tvshow variable.
+// The instructions say to make a variable called topics this is my tvshow variable.
 
 
-var topics = ["star trek", "trailer park boys", "are you afraid of"];
+var topics = ["star trek", "trailer park boys", "are you afraid of the dark"];
 
 
  // Generic function for capturing the Show name from the data-attribute
  function alerttopics() {
    var topics = $(this).attr("data-name");
-
-  //  alert(topics);
  }
 
  // Function for displaying show data
@@ -52,9 +50,6 @@ var topics = ["star trek", "trailer park boys", "are you afraid of"];
  });
 
  // Function for displaying the movie info
- // We're adding a click event listener to all elements with the class "movie"
- // We're adding the event listener to the document because it will work for dynamically generated elements
- // $(".movies").on("click") will only add listeners to elements that are on the page at that time
 // 
 
 
@@ -63,24 +58,6 @@ $(document).on("click", ".show", alerttopics);
  // Calling the renderButtons function to display the intial buttons
  renderButtons();
 
-
-
-
-// function tvbutton () {
-//   for (var i = 0; i < topics.length; i++) {
-//     document.getElementById("btndiv").innerHTML += "<button>" + topics[i] + "</button>";
-//     
-//   }
-// }
-// tvbutton();
-
-// for each topic make a button with a data show property of the tv show name
-
-
-  // $.each(topics, function (indexInArray, valueOfElement) { 
-  //   document.createElement.button
-     
-  // });
 $(document).on("click", ".show", function () {
   
 
