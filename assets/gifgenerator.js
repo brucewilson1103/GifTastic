@@ -1,7 +1,7 @@
 // Adding click event listen listener to all buttons    The instructions say to make a variable called topics this is my tvshow variable.
 
 
-var topics = ["star trek", "trailer park boys", "are you afraid of the dark"];
+var topics = ["star trek", "trailer park boys", "are you afraid of"];
 
 
  // Generic function for capturing the Show name from the data-attribute
@@ -143,24 +143,26 @@ $(document).on("click", ".show", function () {
 $(document).on("click", ".dyn-div", function () {
 // $('.dyn-div').on("click", function() {
   // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-  var state = $(this).attr("data-state");
+ 
   var image = $(this).find("img")
+  var state = image.attr("data-state");
   console.log(image)
   // If the clicked image's state is still, update its src attribute to what its data-animate value is.
   // Then, set the image's data-state to animate
   // Else set src to the data-still value
   console.log("asfasdf")
   if (state === "still") {
-    var AnimateURL = image.attr("data-animate")
-    image.attr("src", AnimateURL);
+    // var AnimateURL = image.attr("data-animate")
+    image.attr("src", image.attr("data-animate"));
     image.attr("data-state", "animate");
   } else {
     image.attr("src", image.attr("data-still"));
     image.attr("data-state", "still");
 
-
+    console.log(image.attr("data-state"))
     
   }
+  
   
 });
 
